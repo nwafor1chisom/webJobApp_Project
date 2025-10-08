@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+  <div class="card shadow-sm p-4 text-center">
+    <h3 class="mb-3">Welcome, {{ user.username }}!</h3>
+    {% if user.is_employer %}
+      <p class="lead">Post jobs and manage applicants from your dashboard.</p>
+      <a href="{% url 'create_job' %}" class="btn btn-primary">Post a Job</a>
+    {% else %}
+      <p class="lead">Find and apply to jobs that suit your skills.</p>
+      <a href="{% url 'job_list' %}" class="btn btn-primary">Browse Jobs</a>
+    {% endif %}
+  </div>
+{% endblock %}

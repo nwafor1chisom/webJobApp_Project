@@ -1,0 +1,17 @@
+.text-muted {
+  color: #6c757d !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.mt-4 { margin-top: 1.5rem !important; }
+.mb-4 { margin-bottom: 1.5rem !important; }
+.shadow-sm {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+}
